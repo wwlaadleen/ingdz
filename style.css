@@ -56,7 +56,7 @@ html, body {
       .checkbox {
       margin-bottom: 10px;
       }
-      select, .children, .gender, .bdate-block {
+      select, .children, .gender {
       width: calc(100% + 26px);
       padding: 5px 0;
       }
@@ -69,18 +69,15 @@ html, body {
       .gender label {
       padding: 0 5px 0 0;
       } 
-      .bdate-block {
-      display: flex;
-      justify-content: space-between;
-      }
+      
       .birthdate select.day {
-      width: 35px;
+      width: 350px;
       }
       .birthdate select.mounth {
       width: calc(100% - 94px);
       }
       .birthdate input {
-      width: 38px;
+      width: 100px;
       vertical-align: unset;
       }
       .checkbox input, .children input {
