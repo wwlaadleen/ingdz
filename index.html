@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Форма заказа</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+
+  </head>
+  <body>
+    <div class="main-block">
+    <form action="/">
+      <h1>Форма заказа</h1>
+      <fieldset>
+        <legend>
+          <h3>Подтверждение аккаунта</h3>
+        </legend>
+        <div  class="account-details">
+          <div><label>Почта*</label><input type="email" name="email" required></div>
+          <div><label>Пароль*</label><input type="password" name="name" required></div>
+          <div><label>Повторите почту*</label><input type="email" name="email" required></div>
+          <div><label>Повторите пароль*</label><input type="password" name="name" required></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Личные данные</h3>
+        </legend>
+        <div  class="personal-details">
+          <div>
+            <div><label>Имя*</label><input type="text" name="name" required></div>
+            <div><label>Телефон*</label><input type="text" name="name" required></div>
+            <div><label>Город*</label><input type="text" name="name" required></div>
+            <div>
+              <label>Доставка*</label>  
+              <select>
+                <option value=""></option>
+                <option value="Armenia">Самовывоз</option>
+                <option value="Russia">Доставка в отделение</option>
+                <option value="Germany">Доставка курьером к дому</option>
+                <option value="France">Ускоренная доставка</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div>
+              <label>Подтверждение*</label>
+              <div class="gender">
+                <input type="radio" value="none" id="male" name="gender" required/>
+                <label for="male" class="radio">На почту</label>
+                <input type="radio" value="none" id="female" name="gender" required/>
+                <label for="female" class="radio">Рассылка</label>
+                <input type="radio" value="none" id="male" name="gender" required/>
+                <label for="male" class="radio">Оказаться от рассылки</label>
+              </div>
+            </div>
+            <div class="birthdate">
+              <label>Дата оформления заказа*</label>
+              <div class="bdate-block">               
+                <input type="date" id="start" name="trip-start" value="" min="2018-01-01" max="today">
+              </div>
+            </div>
+            <div>
+              <label>Номер отделения*</label>              
+              <select required>
+                <option value=""></option>
+                <option value="Armenian">№ 1</option>
+                <option value="Russian">№ 2</option>
+                <option value="German">№ 3</option>
+                <option value="French">№ 4</option>
+                <option value="American">№ 5</option>
+                <option value="English">№ 6</option>
+              </select>
+            </div>
+            <div>
+              <label>Чек*</label>
+              <div class="children">
+                <input type="checkbox" name="name" >Вместе с доставкой
+                <input type="checkbox" name="name" >В СМС на телефон
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Условия соглашения</h3>
+        </legend>
+        <div  class="terms-mailing">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox"><span>Я принимаю <a href="https://www.w3docs.com/privacy-policy">Условия конфиденциальности</a></span>
+          </div>
+      </fieldset>
+      <div class="foot-btn">
+        <button type="submit" href="/">Выслать</button>
+        <button type="submit" href="/">Сбросить</button>
+      </div>
+    </form>
+    </div> 
+  </body>
+</html>
